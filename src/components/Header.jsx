@@ -8,9 +8,9 @@ const Header = ({ children }) => {
         <div>
           <NavLink
             to="/"
-            className="text-2xl font-extrabold tracking-widest  group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#cd001f] via-[#009e25] to-[#014e85] "
+            className="text-5xl font-extrabold tracking-widest  group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#cd001f] via-[#009e25] to-[#014e85] "
           >
-            Karthick Sivasamy
+            SK
             <span className=" block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-[#cd001f] via-[#009e25] to-[#014e85] "></span>
           </NavLink>
         </div>

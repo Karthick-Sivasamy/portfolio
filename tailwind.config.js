@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       broad: ['Ysabeau SC', 'sans-serif'],
+      courier: ['Courier Prime', 'monospace'],
+      inter: ['Inter', 'sans-serif'],
     },
     extend: {},
   },

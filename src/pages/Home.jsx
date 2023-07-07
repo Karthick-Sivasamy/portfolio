@@ -1,35 +1,31 @@
 import React from 'react';
 import Header from '../components/Header';
+import CustomHeader from '../components/CustomHeader';
+import profileImage from '../assets/mypic.jpg';
+import ArrowSvg from '../assets/Arrow.svg';
 
 const Home = () => {
   return (
-    <Header>
-      <div className="h-full w-full bg-yellow-300 text-black flex items-center justify-center ">
-        <div className=" border-r-2 border-black  text-right h-[80%] w-[65%] grid grid-cols-3  px-12 place-items-center">
-          <span className="text-4xl font-semibold">Hi, I'm</span>
-          <div className="flex justify-evenly w-full">
-            <p className="font-broad text-5xl font-extrabold uppercase flex flex-col h-full items-center gap-2">
-              {['K', 'a', 'r', 't', 'h', 'i', 'c', 'k', ' '].map(
-                (item, index) => (
-                  <span key={index}>{item}</span>
-                )
-              )}
-            </p>
-            <p className="font-broad text-5xl font-extrabold uppercase flex flex-col h-full items-center gap-2">
-              {['S', 'i', 'v', 'a', 's', 'a', 'm', 'y'].map((item, index) => (
-                <span key={index}>{item}</span>
-              ))}
-            </p>
-          </div>
-          <span className="text-4xl font-extrabold  ">
-            Full Stack Developer
-          </span>
+    <CustomHeader>
+      <div className="bg-[#f5f5f7] text-black flex flex-col lg:flex-row-reverse items-center lg:justify-evenly py-12 sm:p-16 h-[90%] w-full">
+        <div className=" h-full text-3xl md:text-4xl lg:text-5xl flex flex-col justify-center items-center gap-4 md:gap-8 grow-1 text-center">
+          <h1 className="text-xl md:text-3xl font-semibold">Hi, My name is</h1>
+          <h1 className="font-bold  ">Karthick Sivasamy</h1>
+          <h1 className=" font-courier font-medium">I'm a {'{<'}Full Stack</h1>
+          <h1 className=" font-courier font-medium">Web Developer{'/>}'}</h1>
         </div>
-        <span className="text-4xl font-extrabold w-[35%]   px-12">
-          Full Stack Developer
-        </span>
+        <div className="w-auto h-full flex justify-center items-center  grow-0">
+          <img
+            src={profileImage}
+            alt="photo"
+            className="object-contain h-[65%] md:h-[80%] w-auto rounded-full"
+          />
+        </div>
       </div>
-    </Header>
+      <div className=" bg-[#f5f5f7] w-full h-[10%] flex items-center justify-center">
+        <img src={ArrowSvg} alt="arrowicon" />
+      </div>
+    </CustomHeader>
   );
 };
 
