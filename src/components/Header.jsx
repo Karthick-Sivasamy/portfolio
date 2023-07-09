@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = ({ children }) => {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="h-[100vh] w-full flex flex-col">
       <div className="h-[10%] hidden w-full md:flex justify-between px-8 md:px-16 items-center border-b-[1px] border-black bg-black text-white">
@@ -13,6 +15,7 @@ const Header = ({ children }) => {
             SK
             <span className=" block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-[#cd001f] via-[#009e25] to-[#014e85] "></span>
           </NavLink>
+          <input type="checkbox" onChange={(e) => console.log(e)} />
         </div>
         <div className="flex  gap-16 items-center ">
           {['About', 'Services', 'Works', 'Contact'].map((item, index) => (
