@@ -53,7 +53,7 @@ const CustomHeader = ({ children }) => {
           ))}
         </div>
       </div>
-      <div className="h-[92%] w-full">{children}</div>
+      <div className="h-[92%] w-full overflow-y-auto">{children}</div>
     </div>
   );
 };
