@@ -4,7 +4,7 @@ import CustomHeader from '../components/CustomHeader';
 const About = () => {
   return (
     <CustomHeader>
-      <div className="h-full  w-full bg-yellow-300 grid place-items-center">
+      <div className="h-full  w-full bg-[#f5f5f7] grid place-items-center">
         <div className="w-full flex flex-col lg:flex-row lg:items-center  justify-center lg:justify-between gap-6  md:gap-12 lg:gap-20 p-4 md:p-12 lg:p-24  ">
           <h1 className="text-4xl md:text-6xl font-bold flex-grow-0 ">About</h1>
           <div className="  lg:h-48 border-b-2 lg:border-b-0 border-b-black  lg:border-r-2 md:border-r-black w-full lg:w-10" />
