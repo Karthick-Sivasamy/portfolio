@@ -4,28 +4,48 @@ import { motion } from 'framer-motion';
 import { workData } from '../data';
 import NewTab from '../assets/Newtab.svg';
 
+const images = [
+  'https://wallpapercave.com/wp/wp12625487.jpg',
+  'https://wallpapercave.com/fuwp/uwp3859167.jpeg',
+  'https://wallpapercave.com/fuwp/uwp3855758.jpeg',
+  'https://wallpapercave.com/fuwp/uwp3838467.jpeg',
+  'https://wallpapercave.com/fuwp/uwp3876807.jpeg',
+  'https://wallpapercave.com/dwp1x/wp4275032.jpg',
+  'https://wallpapercave.com/dwp1x/wp4173581.jpg',
+  'https://wallpapercave.com/dwp1x/wp4275031.jpg',
+];
+
 const Works = () => {
   return (
     <CustomHeader>
-      <div className="bg-[#f5f5f7] p-4 md:p-8 flex flex-col justify-start h-auto">
+      <div className="bg-lime-300 p-4 md:p-8 flex flex-col justify-start min-h-full">
         <h1 className="text-2xl md:text-3xl font-semibold ">
           Here are some of my works...
         </h1>
 
-        <div className="w-full flex flex-col my-8 gap-4 p-0 md:p-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 my-8 gap-8 p-0 md:p-8 place-items-center">
           {workData.map((item, index) => (
-            <div
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{
+                type: 'spring',
+                stiffness: 200,
+                damping: 10,
+              }}
               key={index}
-              className="p-6 bg-white rounded-lg flex flex-col gap-10  cursor-pointer shadow-md h-full  "
+              className=" bg-white rounded-lg flex flex-col gap-10  cursor-pointer shadow-md h-full  "
             >
-              <div className="flex flex-col sm:flex-row gap-8 h-full">
+              <div className="flex flex-col items-center h-full">
                 <img
-                  src={'https://wallpapercave.com/wp/wp7889593.jpg'}
+                  src={images[Math.floor(Math.random() * 8)]}
                   alt="image"
-                  className="object-cover rounded-lg  w-[250px]"
+                  className="object-cover rounded-t-lg h-[250px] w-full"
                 />
+                <div className="text-center font-bold p-2 m-auto text-md flex items-center">
+                  {item.title}
+                </div>
 
-                <div className="flex flex-col gap-3   justify-between w-full  h-full">
+                {/* <div className="flex flex-col gap-3   justify-between w-full  h-full">
                   <h1 className="text-2xl md:text-3xl font-semibold ">
                     {item.title}
                   </h1>
@@ -61,9 +81,9 @@ const Works = () => {
                       />
                     </motion.div>
                   </a>
-                </div>
+                </div> */}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
