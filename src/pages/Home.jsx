@@ -6,10 +6,16 @@ import profileImage1 from '../assets/newProfilePic.jpg';
 import ArrowSvg from '../assets/Arrow.svg';
 
 const Home = () => {
+  function getApi() {
+    for (let i = 0; i < 100; i++) {
+      console.log(i);
+    }
+  }
+
   return (
     profileImage && (
       <CustomHeader>
-        <div className="bg-teal-300 text-black flex flex-col lg:flex-row-reverse items-center lg:justify-evenly py-12 sm:p-16 min-h-full w-full gap-6 lg:gap-0">
+        <div className="bg-gray-300 text-black flex flex-col lg:flex-row-reverse items-center lg:justify-evenly py-12 sm:p-16 min-h-full w-full gap-6 lg:gap-0">
           <div className=" h-full text-2xl md:text-4xl lg:text-5xl flex flex-col justify-center items-center gap-4 md:gap-8 grow-1 text-center">
             <h1 className="text-xl md:text-3xl font-semibold">
               Hi, My name is
@@ -25,7 +31,7 @@ const Home = () => {
           <img
             src={profileImage1}
             alt="photo"
-            className="object-contain  h-[250px] md:h-[350px] w- rounded-full border-2  border-amber-200  p-1 bg-amber-100  shadow-xl "
+            className="object-contain  h-[250px] md:h-[350px] w- rounded-full border-2  border-black  p-1 bg-gray-200  shadow-xl "
           />
         </div>
       </CustomHeader>

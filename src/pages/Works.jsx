@@ -3,6 +3,7 @@ import CustomHeader from '../components/CustomHeader';
 import { motion } from 'framer-motion';
 import { workData } from '../data';
 import NewTab from '../assets/Newtab.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const images = [
   'https://wallpapercave.com/wp/wp12625487.jpg',
@@ -36,7 +37,7 @@ const Works = () => {
               className=" bg-white rounded-lg flex flex-col gap-10  cursor-pointer shadow-md h-full  "
             >
               <div className="flex flex-col items-center h-full">
-                <img
+                <LazyLoadImage
                   src={images[Math.floor(Math.random() * 8)]}
                   alt="image"
                   className="object-cover rounded-t-lg h-[250px] w-full"

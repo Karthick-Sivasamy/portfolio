@@ -4,10 +4,10 @@ import CustomHeader from '../components/CustomHeader';
 const About = () => {
   return (
     <CustomHeader>
-      <div className="min-h-full  w-full bg-[#f5f5f7] grid place-items-center">
+      <div className="min-h-full  w-full bg-yellow-300 grid place-items-center">
         <div className="w-full flex flex-col lg:flex-row lg:items-center  justify-center lg:justify-between gap-6  md:gap-12 lg:gap-20 p-4 md:p-12 lg:p-24  ">
           <h1 className="text-4xl md:text-6xl font-bold flex-grow-0 ">About</h1>
-          <div className="  lg:h-48 border-b-2 lg:border-b-0 border-b-black  lg:border-r-2 md:border-r-black w-full lg:w-10" />
+          <div className="  lg:h-56 border-b-2 lg:border-b-0 border-b-black  lg:border-r-2 md:border-r-black w-full lg:w-10" />
           <div className="text-lg md:text-xl flex-grow-1 font-medium flex flex-col gap-4">
             <p>
               Hi, I'm <strong>Karthick Sivasamy</strong>, a{' '}
@@ -19,7 +19,7 @@ const About = () => {
               expert in SQL and NoSQL databases.
             </p>
             <p>
-              In my previous role at Powersoft Techno Solutions, I was
+              In my current role at Powersoft Techno Solutions, I was
               responsible for building and maintaining the coding standards and
               structures. I also developed a number of internal applications
               that helped to improve the efficiency of the business. I'm a
