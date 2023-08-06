@@ -28,8 +28,10 @@ const About = () => {
             </p>
             <p>
               I'm confident that I have the skills and experience to be a
-              valuable asset to your team. I'm eager to learn more about your
-              company and discuss how I can contribute to your success.
+              valuable asset. I'm eager to learn new technologies and adapt to
+              the evolution of the development era.
+              {/* more about your company and
+              discuss how I can contribute to your success. */}
             </p>
           </div>
         </div>

@@ -20,29 +20,23 @@ const Works = () => {
   return (
     <CustomHeader>
       <div className="bg-lime-300 p-4 md:p-8 flex flex-col justify-start min-h-full">
-        <h1 className="text-2xl md:text-3xl font-semibold ">
-          Here are some of my works...
+        <h1 className="text-xl md:text-3xl font-semibold px-0 md:px-8 ">
+          Here are some of my works
         </h1>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 my-8 gap-8 p-0 md:p-8 place-items-center">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 my-4 gap-8 p-0 md:p-8 place-items-center">
           {workData.map((item, index) => (
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{
-                type: 'spring',
-                stiffness: 200,
-                damping: 10,
-              }}
+            <div
               key={index}
-              className=" bg-white rounded-lg flex flex-col gap-10  cursor-pointer shadow-md h-full  "
+              className=" bg-white rounded-lg flex flex-col gap-10  cursor-pointer shadow-md h-full hover:scale-105 duration-500"
             >
-              <div className="flex flex-col items-center h-full">
+              <div className="flex flex-col items-center h-full w-full">
                 <LazyLoadImage
                   src={images[Math.floor(Math.random() * 8)]}
                   alt="image"
                   className="object-cover rounded-t-lg h-[250px] w-full"
                 />
-                <div className="text-center font-bold p-2 m-auto text-md flex items-center">
+                <div className="text-center font-bold p-2 m-auto text-md flex items-center justify-center  w-full">
                   {item.title}
                 </div>
 
@@ -84,7 +78,7 @@ const Works = () => {
                   </a>
                 </div> */}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

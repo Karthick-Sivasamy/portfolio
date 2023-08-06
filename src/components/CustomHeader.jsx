@@ -26,7 +26,7 @@ const CustomHeader = ({ children }) => {
   ];
   return (
     <div className="h-[100vh]  w-full flex flex-col items-center justify-center">
-      <div className="h-[8%] flex items-center w-full px-4 sm:px-24 lg:px-48 justify-between shadow-sm z-10 bg-gray-950 text-white">
+      <div className="h-[8%] flex items-center w-full px-4 sm:px-24 lg:px-48 justify-between shadow-sm z-10 bg-gray-900 text-white">
         <NavLink
           className="text-3xl font-semibold tracking-wider cursor-pointer"
           to="/"
@@ -42,7 +42,7 @@ const CustomHeader = ({ children }) => {
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? 'text-blue-600 '
+                    ? 'text-blue-500 '
                     : 'text-white group transition duration-300'
                 } `
               }
